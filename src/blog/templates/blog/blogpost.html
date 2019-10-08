@@ -3,22 +3,23 @@
 <div class="container">
         <div class="row mt-4">
                 <div class="col-md-8 blog-main">
-                  <h3 class="pb-4 mb-4 font-italic border-bottom">
-                    Tittle
+                  <h3 class=" font-italic ">
+                    {{post.tittle}}
                   </h3>
             
                   <div class="blog-post">
-                    <h2 class="blog-post-title">Heading0</h2>
-                    <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+                    <h2 class="blog-post-title">{{post.head0}}</h2>
+                    <p class="blog-post-meta">{{post.pub_date}} <a href="#">Mark</a></p>
             
-                   <p>heading0 content</p>
-                    <h2>Heading1</h2>
-                    <p>heading1 content</p>
+                   <p>{{post.chead0}}</p>
+                    <h2> {{post.head1}} </h2>
+                    <p> {{post.chead1}} </p>
                   
-                    <h2>Heading2</h2>
-                    <p>heading2 content</p>
-            
-            
+                    <h2> {{post.head2}} </h2>
+                    <p> {{post.chead2}} </p>
+                    <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-show-faces="" data-share="true"></div>
+                    <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-width="" data-numposts="5"></div>
+                 
                 
                 </div><!-- /.blog-main -->
                 </div>
